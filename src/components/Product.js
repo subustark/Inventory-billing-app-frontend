@@ -32,7 +32,7 @@ const Product = () => {
       name: productName,
       image: ProductImage
     }
-    fetch(`https://inventory-billing-app-backend.vercel.app/products/${productId}`, {
+    fetch(`https://inventory-app-backend-i62a.onrender.com/products/${productId}`, {
       method: "PUT",
       body: JSON.stringify(updatedProduct),
       headers: {
@@ -42,7 +42,7 @@ const Product = () => {
   }
 
   const removeProduct = (id) => {
-    fetch(`https://inventory-billing-app-backend.vercel.app/products/${id}`, {
+    fetch(`https://inventory-app-backend-i62a.onrender.com/products/${id}`, {
       method: "DELETE"
     })
       .then((data) => data.json())
@@ -61,7 +61,7 @@ const Product = () => {
       name: newProductName,
       image: newProductImage
     }
-    fetch("https://inventory-billing-app-backend.vercel.app/products", {
+    fetch("https://inventory-app-backend-i62a.onrender.com/products", {
       method: "POST",
       body: JSON.stringify(newStock),
       headers: {
@@ -71,7 +71,7 @@ const Product = () => {
   }
 
   const getProduct = (id) => {
-    fetch(`https://inventory-billing-app-backend.vercel.app/products/${id}`, {
+    fetch(`https://inventory-app-backend-i62a.onrender.com/products/${id}`, {
       method: "GET"
     })
       .then((data) => data.json())
@@ -80,7 +80,7 @@ const Product = () => {
   }
 
   const getProducts = () => {
-    fetch("https://inventory-billing-app-backend.vercel.app/products", {
+    fetch("https://inventory-app-backend-i62a.onrender.com/products", {
       method: "GET"
     })
       .then((data) => data.json())

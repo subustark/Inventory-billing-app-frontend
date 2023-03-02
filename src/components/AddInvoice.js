@@ -45,7 +45,7 @@ const AddInvoice = () => {
     }
 
     const getStocks = () => {
-        fetch("https://inventory-billing-app-backend.vercel.app/stocks", {
+        fetch("https://inventory-app-backend-i62a.onrender.com/stocks", {
             method: "GET"
         })
             .then((data) => data.json())

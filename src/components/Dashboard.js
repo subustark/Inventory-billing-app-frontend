@@ -30,7 +30,7 @@ const Dashboard = () => {
   const [orders, setOrders] = useState("");
 
   const getOrders = () => {
-    fetch("https://inventory-billing-app-backend.vercel.app/orders/count", {
+    fetch("https://inventory-app-backend-i62a.onrender.com/orders/count", {
       method: "GET",
     })
       .then((data) => data.json())

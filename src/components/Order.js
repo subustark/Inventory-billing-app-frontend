@@ -38,7 +38,7 @@ const Order = () => {
             status: status,
             deliveryDate: deliveryDate
         }
-        fetch(`https://inventory-billing-app-backend.vercel.app/orders/${orderId}`, {
+        fetch(`https://inventory-app-backend-i62a.onrender.com/orders/${orderId}`, {
             method: "PUT",
             body: JSON.stringify(updatedOrder),
             headers: {
@@ -57,7 +57,7 @@ const Order = () => {
             status: newStatus,
             deliveryDate: newDeliveryDate
         }
-        fetch("https://inventory-billing-app-backend.vercel.app/orders", {
+        fetch("https://inventory-app-backend-i62a.onrender.com/orders", {
             method: "POST",
             body: JSON.stringify(newOrder),
             headers: {
@@ -67,7 +67,7 @@ const Order = () => {
     }
 
     const getOrder=(id)=> {
-        fetch(`https://inventory-billing-app-backend.vercel.app/orders/${id}`, {
+        fetch(`https://inventory-app-backend-i62a.onrender.com/orders/${id}`, {
             method: "GET"
         })
             .then((data) => data.json())
@@ -76,7 +76,7 @@ const Order = () => {
     }
 
     const getOrders=()=> {
-        fetch("https://inventory-billing-app-backend.vercel.app/orders", {
+        fetch("https://inventory-app-backend-i62a.onrender.com/orders", {
             method: "GET"
         })
             .then((data) => data.json())
